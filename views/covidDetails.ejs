@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Covid Details</title>
+</head>
+<body>
+    <h2>Exposure to the virus</h2>
+    <form action="/addexposure" method="post">
+        <fieldset>
+
+            <label for="exposure_date">Date of Exposure:</label>
+            <input type="date" id="exposure_date" name="exposure_date">
+
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+    </form>
+    <h2>Recovery from the virus</h2>
+    <form action="/addrecovery" method="post">
+        <fieldset>
+
+            <label for="recovery_date">Date of Recovery:</label>
+            <input type="date" id="recovery_date" name="recovery_date">
+
+        </fieldset>
+        <button type="button">Submit</button>
+        <button type="button">Cancel</button>
+    </form>
+</body>

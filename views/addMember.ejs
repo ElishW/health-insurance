@@ -1,0 +1,51 @@
+<!-- add_patient.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Add New Member</title>
+</head>
+<body>
+    <h2>Add New Member</h2>
+    <form id="addMemberForm" action="" method="post">
+        <fieldset>
+            <legend>Personal Details:</legend>
+
+            <label for="last_name">Last name:</label>
+            <input type="text" id="last_name" name="last_name" ><br>
+
+            <label for="first_name">First name:</label>
+            <input type="text" id="first_name" name="first_name" ><br>
+
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" pattern="\d{9}" title="Please enter 9 digits" min="100000000" max="999999999" > <br>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" ><br>
+
+            <label for="street">Street:</label>
+            <input type="text" id="street" name="street" ><br>
+
+            <label for="street_number">Street Number:</label>
+            <input type="text" id="street_number" name="street_number" ><br>
+
+            <label for="birth_date">Birth date:</label>
+            <input type="date" id="birth_date" name="birth_date" ><br>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="telephone"><br>
+
+            <label for="mobile">Mobile:</label>
+            <input type="tel" id="mobile" name="mobile" ><br>
+
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="button" onclick="cancel()"><a href='/'>Cancel</a></button>
+    </form>
+</body>
+</html>
+<script src="index.js"></script>

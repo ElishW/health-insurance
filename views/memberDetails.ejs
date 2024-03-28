@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Member details</title>
+
+</head>
+
+<body>
+<h2>Member Details</h2>
+<form>
+    <table id="member">
+        <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Identity Card</th>
+            <th>City</th>
+            <th>Street</th>
+            <th>Street Number</th>
+            <th>Date of Birth</th>
+            <th>Telephone</th>
+            <th>Mobile phone</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><%= member.lastName %></td>
+            <td><%= member.firstName %></td>
+            <td><%= member.identityCard %></td>
+            <td><%= member.city %></td>
+            <td><%= member.street %></td>
+            <td><%= member.streetNumber %></td>
+            <td><%= member.dateOfBirth %></td>
+            <td><%= member.telephone %></td>
+            <td><%= member.mobilePhone %></td>
+            <div class="button-container">
+                <td><button type="button" id="edit"><a href="/updatemember/<%= member.id %>">Edit</a></button></td>
+                <td><button type="button" id="delete"><a href="/deletemember/<%= member.id %>">Delete</a></button></td>
+            </div>
+
+            <!-- Add more table data cells for other member properties -->
+        </tr>
+
+        <!-- Add more rows as needed -->
+
+        </tbody>
+
+    </table>
+
+
+</form>
+
+
+<h2>Injections</h2>
+<form>
+    <table id="vaccine">
+    <thead>
+    <tr>
+        <th>Injection number</th>
+        <th>Date</th>
+        <th>Manufacturer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <% doses.forEach(function(dose) { %>
+        <tr>
+            <td><%= dose.numberInjection%></td>
+            <td><%= dose.injectionDate%></td>
+            <td><%= dose.manufacturer%></td>
+        </tr>
+    <% }); %>
+    <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+    <div class="button-container">
+        <button type="button_member_details" id="add"><a href='/addvaccine/<%= member.id %>'>Add</a></button>
+    </div>
+</form>
+
+
+<h2>Covid Info</h2>
+<form>
+    <table id="covid">
+        <thead>
+        <tr>
+            <th>Exposure date</th>
+            <th>Recovery date</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>4</td>
+            <td>2024-03-26</td>
+        </tr>
+        <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+
+    <div class="button-container">
+        <button type="button_member_details" id="add">Add</button>
+    </div>
+
+</form>
+
+</body>
+
+<script src="script.js"></script>

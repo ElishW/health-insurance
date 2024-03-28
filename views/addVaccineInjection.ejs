@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Add New Vaccine</title>
+</head>
+<body>
+  <h2>Add New Vaccine</h2>
+  <form action="/addvaccine" method="post">
+    <fieldset>
+      <legend>Details:</legend>
+
+      <label for="id">ID:</label>
+      <input type="text" id="id" name="id" pattern="\d{3}" title="Please enter 3 digits" required><br>
+
+      <label for="number_injection">Injection number:</label>
+      <input type="number" id="number_injection" name="number_injection" min="1" max="4">
+
+      <label for="vaccine_manufacturer">Manufacturer of Vaccine:</label>
+      <input type="text" id="vaccine_manufacturer" name="vaccine_manufacturer">
+
+      <label for="injection_date">Date of Injection:</label>
+      <input type="date" id="injection_date" name="injection_date">
+
+    </fieldset>
+    <button type="submit">Submit</button>
+    <button type="button" onclick="cancel()"><a href='/'>Cancel</a></button>
+  </form>
+</body>

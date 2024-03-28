@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Members</title>
+</head>
+
+<h2>Members</h2>
+<form>
+    <table id="member">
+        <thead>
+        <tr>
+            <th>Last name</th>
+            <th>First name</th>
+            <th>ID</th>
+            <th></th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <% members.forEach(function(member) { %>
+            <tr>
+                <td><%= member.lastName %></td>
+                <td><%= member.firstName %></td>
+                <td><a href='members/<%= member.id %>'><%= member.identityCard %></a></td>
+                <div class="button-container">
+                    <td><button type="button" id="edit"><a href="/updatemember/<%= member.id %>">Edit</a></button></td>
+                    <td><button type="button" id="delete"><a href="/deletemember/<%= member.id %>">Delete</a></button></td>
+                </div>
+            </tr>
+        <% }); %>
+        <!-- Add more rows as needed -->
+        </tbody>
+    </table>
+    <button type="button" id="add"><a href='/addmember'>Add</a></button>
+
+</form>
+</body>
+</html>

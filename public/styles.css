@@ -1,0 +1,130 @@
+h2 {
+    text-align: center;
+ }
+body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+    }
+
+form, table {
+        width: 70%;
+        margin: 20px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+fieldset {
+        border: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+legend {
+        font-weight: bold;
+        font-size: 1.2em;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+label {
+        display: block;
+        margin-bottom: 5px;
+        color: #666;
+    }
+
+input[type="text"],
+input[type="date"],
+input[type="tel"],
+input[type="number"]{
+    width: calc(100% - 12px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    }
+
+/* Style the buttons */
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.button-container {
+    width: 100%;
+    margin: 20px auto;
+    text-align: left;
+}
+
+th, td {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+}
+
+/* Style the clinic members table */
+#member {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#member th, #member td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#member th {
+    background-color: #f2f2f2;
+}
+
+/* Style the injections table */
+#vaccine {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#vaccine th, #vaccine td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#vaccine th {
+    background-color: #f2f2f2;
+}
+
+
+/* Style the injections table */
+#covid {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#covid th, #covid td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#covid th {
+    background-color: #f2f2f2;
+}
+
